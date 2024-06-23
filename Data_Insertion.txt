@@ -1,0 +1,451 @@
+
+-- Insertion DDL script for AdministrationDepartment table
+
+INSERT INTO AdministrationDepartment (DID, DName)
+VALUES
+    (1001, 'Maketing Department'),
+    (1002, ''),
+    (1003, 'Content Management Department'),
+    (1004, 'Editorial Department'),
+    (1005, 'Finance Department'),
+    (1006, 'Customer Support Department'),
+    (1007, 'Technical Department'),
+    (1008, 'Legal Department'),
+    (1009, 'Public Relations Department'),
+    (1010, 'Human Resources Department'),
+    (1011, 'Information Technology Department'),
+    (1012, 'Sales Department'),
+    (1013, 'Research and Development Department'),
+    (1014, 'Quality Assurance Department'),
+    (1015, 'Operations Department'),
+    (1016, 'Supply Chain Department'),
+    (1017, 'Training and Development Department'),
+    (1018, 'Product Management Department');
+
+
+
+-- Insertion DDL script for Staff table
+
+INSERT INTO Staff (StaffID, StaffName, Address, DOB, DID, MgrID)
+VALUES
+(2001, 'Rajesh Kumar', '123, Gandhi Nagar, New Delhi, Delhi, India', '1986-06-15', 1001, NULL),
+(2002, 'Sunita Sharma', '456, Mahatma Gandhi Road, Mumbai, Maharashtra, India', '1985-08-20', 1001, 2001),
+(2003, 'Amit Patel', '789, Jawaharlal Nehru Street, Bangalore, Karnataka, India', '1990-02-10', 1002, NULL),
+(2004, 'Neeta Verma', '101, Janpath, New Delhi, Delhi, India', '1987-04-18', 1004, 2001),
+(2005, 'Vivek Singhania', '204, Linking Road, Mumbai, Maharashtra, India', '1992-09-23', 1004, 2001),
+(2006, 'Rahul Khanna', '301, MG Road, Bangalore, Karnataka, India', '1985-11-30', 1005, NULL),
+(2007, 'Anjali Gupta', '405, Rajaji Nagar, Bangalore, Karnataka, India', '1990-07-15', 1005, 2006),
+(2008, 'Karthik Nair', '501, Park Street, Kolkata, West Bengal, India', '1993-12-08', 1006, NULL),
+(2009, 'Deepa Sharma', '606, Marine Drive, Mumbai, Maharashtra, India', '1989-03-12', 1006, 2008),
+(2010, 'Suresh Kumar', '102, Karol Bagh, New Delhi, Delhi, India', '1980-08-15', 1007, 2004),
+(2011, 'Pooja Sharma', '205, Malad West, Mumbai, Maharashtra, India', '1989-04-28', 1007, 2005),
+(2012, 'Ajay Gupta', '402, Whitefield, Bangalore, Karnataka, India', '1983-11-10', 1008, NULL),
+(2013, 'Rajesh Patel', '501, Salt Lake City, Kolkata, West Bengal, India', '1995-03-02', 1008, 2012),
+(2014, 'Neha Singh', '601, Andheri East, Mumbai, Maharashtra, India', '1991-09-17', 1009, NULL),
+(2015, 'Ananya Dubey', '705, Koramangala, Bangalore, Karnataka, India', '1987-07-05', 1009, 2014),
+(2016, 'Anita Sharma', '789, MG Road, Pune, Maharashtra, India', '1984-05-20', 1010, NULL),
+(2017, 'Sandeep Gupta', '456, Ring Road, Hyderabad, Telangana, India', '1990-12-10', 1010, 2016),
+(2018, 'Manoj Patel', '101, Nehru Street, Chennai, Tamil Nadu, India', '1987-07-15', 1011, NULL),
+(2019, 'Nisha Verma', '204, Brigade Road, Bangalore, Karnataka, India', '1992-03-18', 1011, 2018),
+(2020, 'Alok Singh', '301, Park Avenue, Kolkata, West Bengal, India', '1985-09-30', 1012, NULL),
+(2021, 'Sneha Reddy', '405, Jayanagar, Bangalore, Karnataka, India', '1991-08-25', 1012, 2020)
+(2022, 'Amit Sharma', '501, Church Street, Mumbai, Maharashtra, India', '1988-04-12', 1013, NULL),
+(2023, 'Pooja Gupta', '606, Whitefield, Bangalore, Karnataka, India', '1989-11-05', 1013, 2022),
+(2024, 'Vikram Singh', '102, Connaught Place, New Delhi, Delhi, India', '1983-06-22', 1014, NULL),
+(2025, 'Ritu Kapoor', '205, Gachibowli, Hyderabad, Telangana, India', '1993-02-28', 1014, 2024),
+(2026, 'Deepak Sharma', '402, MG Road, Pune, Maharashtra, India', '1980-08-15', 1015, NULL),
+(2027, 'Rashmi Patel', '501, Koramangala, Bangalore, Karnataka, India', '1986-04-17', 1015, 2026),
+(2028, 'Kiran Gupta', '601, Powai, Mumbai, Maharashtra, India', '1991-09-27', 1016, NULL),
+(2029, 'Rahul Nair', '705, Indiranagar, Bangalore, Karnataka, India', '1987-07-05', 1016, 2028),
+(2030, 'Swati Singh', '701, Salt Lake City, Kolkata, West Bengal, India', '1994-12-08', 1017, NULL),
+(2031, 'Anil Kumar', '801, BTM Layout, Bangalore, Karnataka, India', '1982-03-20', 1017, 2030),
+(2032, 'Sarika Sharma', '901, Anna Nagar, Chennai, Tamil Nadu, India', '1990-11-12', 1018, NULL),
+(2033, 'Avinash Reddy', '1001, Bannerghatta Road, Bangalore, Karnataka, India', '1984-02-10', 1018, 2032);
+
+
+-- Insertion DDL script for LoggedUser table
+
+INSERT INTO LoggedUser (UID, UName, Email, PhoneNo, Password, Gender, DOB, UBlockStatus, DID)
+VALUES
+(3001, 'Arun Gupta', 'arun@example.com', 9876543210, 'P@ssw0rd', 'Male', '1988-07-27', false, 1001),
+(3002, 'Priya Singh', 'priya@example.com', 8765432109, 'Secure123', 'Female', '1992-11-12', false, 1002),
+(3003, 'Sanjay Mehta', 'sanjay@example.com', 9876123450, 'Passw0rd123', 'Male', '1991-06-20', false, 1004),
+(3004, 'Aarti Desai', 'aarti@example.com', 8765234109, 'SecureP@ss', 'Female', '1986-02-15', false, 1005),
+(3005, 'Prakash Tiwari', 'prakash@example.com', 7654342108, 'Pr@kash987', 'Male', '1994-11-05', false, 1006),
+(3006, 'Rohan Malhotra', 'rohan@example.com', 8765432109, 'R0hanPass', 'Male', '1985-06-12', false, 1007),
+(3007, 'Priya Reddy', 'priya@example.com', 7654321098, 'Pr1yaSecure', 'Female', '1990-09-25', false, 1008),
+(3008, 'Amit Shah', 'amit@example.com', 6543210987, 'AmitP@ss', 'Male', '1988-03-05', false, 1009),
+(3009, 'Neha Singh', 'neha@example.com', 7654321098, 'Password@1', 'Female', '1987-09-15', false, 1010),
+(3010, 'Anuj Mehta', 'anuj@example.com', 6543210987, 'SecureP@ss123', 'Male', '1989-04-28', false, 1011),
+(3011, 'Swati Patel', 'swati@example.com', 5432109876, 'SwatiPass123', 'Female', '1995-03-02', false, 1012),
+(3012, 'Rajat Sharma', 'rajat@example.com', 4321098765, 'Rajat@321', 'Male', '1988-07-27', false, 1013),
+(3013, 'Priya Verma', 'priya@example.com', 3210987654, 'Secure1234', 'Female', '1992-11-12', false, 1014),
+(3014, 'Amit Shah', 'amit@example.com', 6549873210, 'AmitP@ss', 'Male', '1988-03-05', false, 1015),
+(3015, 'Rohit Malhotra', 'rohit@example.com', 5438762098, 'Rohit@123', 'Male', '1991-06-20', false, 1016),
+(3016, 'Sneha Reddy', 'sneha@example.com', 4327651987, 'SnehaPass', 'Female', '1990-09-25', false, 1017),
+(3017, 'Arun Gupta', 'arun@example.com', 3216549870, 'Arun@321', 'Male', '1985-12-08', false, 1018);
+
+
+-- Insertion DDL script for UnloggedUser table
+
+INSERT INTO UnloggedUser (UnID)
+VALUES
+    (4001),
+    (4002),
+    (4003),
+    (4004),
+    (4005),
+    (4006),
+    (4007),
+    (4008),
+    (4009),
+    (4010),
+    (4011),
+    (4012),
+    (4013),
+    (4014),
+    (4015),
+    (4016);
+
+
+-- Insertion DDL script for Publisher table
+
+INSERT INTO Publisher (PublisherID, PublisherName, Email, PhoneNo, Address)
+VALUES
+    (5001, 'Indian Publisher 1', 'info@indianpublisher1.com', 7654321098, '789, Lal Bahadur Shastri Marg, Kolkata, West Bengal, India'),
+    (5002, 'Indian Publisher 2', 'info@indianpublisher2.com', 6543210987, '456, Subhash Chandra Bose Road, Chennai, Tamil Nadu, India'),
+    (5006, 'India Today', 'info@indiatoday.com', 6549873210, '701, Connaught Place, New Delhi, Delhi, India'),
+    (5007, 'The Economic Times', 'info@economictimes.com', 5438762098, '801, Bandra Kurla Complex, Mumbai, Maharashtra, India'),
+    (5008, 'The Indian Express', 'info@indianexpress.com', 4327651987, '901, MG Road, Bangalore, Karnataka, India'),
+    (5009, 'The Telegraph', 'info@telegraph.com', 5432109876, '301, Park Street, Kolkata, West Bengal, India'),
+    (5010, 'Mint', 'info@livemint.com', 4321098765, '401, BKC, Mumbai, Maharashtra, India'),
+    (5011, 'DNA India', 'info@dnaindia.com', 3210987654, '501, MG Road, Pune, Maharashtra, India'),
+    (5012, 'India Today', 'info@indiatoday.com', 6549873210, '701, Connaught Place, New Delhi, Delhi, India'),
+    (5013, 'The Economic Times', 'info@economictimes.com', 5438762098, '801, Bandra Kurla Complex, Mumbai, Maharashtra, India'),
+    (5014, 'The Indian Express', 'info@indianexpress.com', 4327651987, '901, MG Road, Bangalore, Karnataka, India');
+
+
+
+-- Insertion DDL script for UserPost table
+
+INSERT INTO UserPost (PostID, Title, PostTime, PBlockstatus, Genre, Category, DID, UID)
+VALUES
+    (6001, 'Interesting News', CURRENT_TIMESTAMP, false, 'News', 'General', 1001, 3001),
+    (6002, 'Entertainment Update', CURRENT_TIMESTAMP, false, 'Entertainment', 'Movies', 1002, 3002),
+    (6003, 'Technology Trends: Artificial Intelligence', CURRENT_TIMESTAMP, false, 'Technology', 'AI', 1004, 3003),
+    (6004, 'Health & Fitness: Tips for a Healthy Lifestyle', CURRENT_TIMESTAMP, false, 'Health', 'Fitness', 1004, 3004),
+    (6005, 'Travel Diary: Exploring the Himalayas', CURRENT_TIMESTAMP, false, 'Travel', 'Adventure', 1005, 3005),
+    (6006, 'Science & Innovation: Breakthrough Discoveries', CURRENT_TIMESTAMP, false, 'Science', 'Innovation', 1007, 3006),
+    (6007, 'Lifestyle: Tips for a Balanced Life', CURRENT_TIMESTAMP, false, 'Lifestyle', 'Health', 1008, 3007),
+    (6008, 'Food Reviews: Exploring Culinary Delights', CURRENT_TIMESTAMP, false, 'Food', 'Reviews', 1009, 3008);
+
+
+-- Insertion DDL script for PublisherPost table
+
+INSERT INTO PublisherPost (PPostID, Title, PostTime, PBlockstatus, Genre, Category, DID, UpdateTime, PublisherID)
+VALUES
+    (7001, 'Health Tips for a Better Life', CURRENT_TIMESTAMP, false, 'Health', 'Fitness', 1001, CURRENT_TIMESTAMP, 5001),
+    (7002, 'Latest Technology Trends', CURRENT_TIMESTAMP, false, 'Technology', 'Innovation', 1002, CURRENT_TIMESTAMP, 5002),
+    (7003, 'Cultural Events in India', CURRENT_TIMESTAMP, false, 'Culture', 'Events', 1001, CURRENT_TIMESTAMP, 5001),
+    (7004, 'Travel Diaries: Exploring India', CURRENT_TIMESTAMP, false, 'Travel', 'Adventure', 1002, CURRENT_TIMESTAMP, 5002),
+    (7005, 'Food Recipes from Indian Cuisine', CURRENT_TIMESTAMP, false, 'Food', 'Recipes', 1001, CURRENT_TIMESTAMP, 5001),
+    (7006, 'Financial Tips for Saving Money', CURRENT_TIMESTAMP, false, 'Finance', 'Saving', 1002, CURRENT_TIMESTAMP, 5002),
+    (7007, 'Fashion Trends for 2024', CURRENT_TIMESTAMP, false, 'Fashion', 'Trends', 1001, CURRENT_TIMESTAMP, 5001),
+    (7008, 'Political Analysis: Current Scenario', CURRENT_TIMESTAMP, false, 'Politics', 'Analysis', 1002, CURRENT_TIMESTAMP, 5002),
+    (7009, 'Education System Reforms in India', CURRENT_TIMESTAMP, false, 'Education', 'Reforms', 1001, CURRENT_TIMESTAMP, 5001),
+    (7010, 'Environmental Issues: Solutions', CURRENT_TIMESTAMP, false, 'Environment', 'Sustainability', 1002, CURRENT_TIMESTAMP, 5002),
+    (7011, 'Music Reviews: Latest Releases', CURRENT_TIMESTAMP, false, 'Music', 'Reviews', 1001, CURRENT_TIMESTAMP, 5001),
+    (7012, 'Book Recommendations for Bookworms', CURRENT_TIMESTAMP, false, 'Books', 'Recommendations', 1002, CURRENT_TIMESTAMP, 5002),
+    (7013, 'Artistic Creations: Indian Artists', CURRENT_TIMESTAMP, false, 'Art', 'Indian Artists', 1001, CURRENT_TIMESTAMP, 5001),
+    (7014, 'Sports Updates: Cricket, Football, and more', CURRENT_TIMESTAMP, false, 'Sports', 'Updates', 1002, CURRENT_TIMESTAMP, 5002),
+    (7015, 'Parenting Tips for New Parents', CURRENT_TIMESTAMP, false, 'Parenting', 'Tips', 1001, CURRENT_TIMESTAMP, 5001),
+    (7016, 'Movie Reviews: Bollywood and Hollywood', CURRENT_TIMESTAMP, false, 'Movies', 'Reviews', 1002, CURRENT_TIMESTAMP, 5002),
+    (7017, 'Technology Gadgets: Reviews and Recommendations', CURRENT_TIMESTAMP, false, 'Technology', 'Gadgets', 1001, CURRENT_TIMESTAMP, 5001),
+    (7018, 'Healthcare Updates: Medical Advancements', CURRENT_TIMESTAMP, false, 'Health', 'Updates', 1002, CURRENT_TIMESTAMP, 5002),
+    (7019, 'Home Decor Ideas for Indian Homes', CURRENT_TIMESTAMP, false, 'Home', 'Decor', 1001, CURRENT_TIMESTAMP, 5001),
+    (7020, 'Career Guidance: Tips for Professionals', CURRENT_TIMESTAMP, false, 'Career', 'Guidance', 1002, CURRENT_TIMESTAMP, 5002),
+    (7031, 'Financial News: Market Analysis', CURRENT_TIMESTAMP, false, 'Finance', 'Analysis', 1005, CURRENT_TIMESTAMP, 5006),
+    (7032, 'Business Insights: Investment Strategies', CURRENT_TIMESTAMP, false, 'Business', 'Strategies', 1005,CURRENT_TIMESTAMP, 5007),
+    (7033, 'Political Opinions: Views on Current Affairs',CURRENT_TIMESTAMP, false, 'Politics', 'Opinions', 1006, CURRENT_TIMESTAMP, 5008),
+    (7034, 'Culinary Delights: Recipes from Around the World', CURRENT_TIMESTAMP, false, 'Food', 'Recipes', 1006, CURRENT_TIMESTAMP, 5006),
+    (7035, 'Environmental News: Climate Change Updates', CURRENT_TIMESTAMP, false, 'Environment', 'News', 1007, CURRENT_TIMESTAMP, 5009),
+    (7036, 'Legal Insights: Recent Court Cases', CURRENT_TIMESTAMP, false, 'Legal', 'Insights', 1008, CURRENT_TIMESTAMP, 5010),
+    (7037, 'Public Relations: Building Brand Image', CURRENT_TIMESTAMP, false, 'PR', 'Brand Management', 1009, CURRENT_TIMESTAMP, 5011);
+
+
+-- Insertion DDL script for Likes_1 table
+
+INSERT INTO Likes_1 (LikesID, PostID, UID)
+VALUES
+    (8001, 6001, 3001),
+    (8002, 6002, 3002),
+    (8009, 6003, 3003),
+    (8010, 6004, 3004),
+    (8011, 6005, 3005),
+    (8015, 6006, 3006),
+    (8016, 6007, 3007),
+    (8017, 6008, 3008);
+
+
+-- Insertion DDL script for Likes_2 table
+
+INSERT INTO Likes_2 (LikesID, PPostID, UID)
+VALUES
+    (8003, 7001, 3001),
+    (8004, 7002, 3002),
+    (8012, 7031, 3003),
+    (8013, 7032, 3004),
+    (8014, 7033, 3005),
+    (8018, 7035, 3006),
+    (8019, 7036, 3007),
+    (8020, 7037, 3008);
+
+
+-- Insertion DDL script for Comment_1 table
+
+INSERT INTO Comment_1 (CommentID, Discription, PostID, UID)
+VALUES
+    (9001, 'Great post!', 6001, 3001),
+    (9002, 'Nice update!', 6002, 3002),
+    (9009, 'Interesting article!', 6003, 3003),
+    (9010, 'Great tips, thanks!', 6004, 3004),
+    (9011, 'Wow, amazing journey!', 6005, 3005),
+    (9015, 'Fascinating discoveries!', 6006, 3006),
+    (9016, 'These tips are really helpful!', 6007, 3007),
+    (9017, 'Great reviews, looking forward to more!', 6008, 3008);
+
+
+-- Insertion DDL script for Comment_2 table
+
+INSERT INTO Comment_2 (CommentID, Discription, PPostID, UID)
+VALUES
+    (9003, 'Very informative!', 7001, 3001),
+    (9004, 'Interesting read!', 7002, 3002),
+    (9012, 'Insightful analysis!', 7031, 3003),
+    (9013, 'I agree with this viewpoint.', 7032, 3004),
+    (9014, 'Looking forward to more articles!', 7033, 3005),
+    (9018, 'Insightful analysis!', 7035, 3006),
+    (9019, 'Interesting legal insights.', 7036, 3007),
+    (9020, 'Building a strong brand is essential.', 7037, 3008);
+
+
+-- Insertion DDL script for Share_1 table
+
+INSERT INTO Share_1 (ShareID, PostID, UID)
+VALUES
+    (10001, 6001, 3001),
+    (10002, 6002, 3002),
+    (10009, 6003, 3003),
+    (10010, 6004, 3004),
+    (10011, 6005, 3005),
+    (10015, 6006, 3006),
+    (10016, 6007, 3007),
+    (10017, 6008, 3008);
+
+
+-- Insertion DDL script for Share_2 table
+
+INSERT INTO Share_2 (ShareID, PPostID, UID)
+VALUES
+    (10003, 7001, 3001),
+    (10004, 7002, 3002),
+    (10012, 7031, 3003),
+    (10013, 7032, 3004),
+    (10014, 7033, 3005),
+    (10018, 7035, 3006),
+    (10019, 7036, 3007),
+    (10020, 7037, 3008);
+
+
+-- Insertion DDL script for Advertisement table
+
+INSERT INTO Advertisement (AdID, PaymentPerView, DID, AdvertisementCost)
+VALUES
+    (11001, 5, 1001, 5000),
+    (11002, 7, 1002, 7000),
+    (11003, 8, 1004, 8000),
+    (11004, 6, 1005, 6000),
+    (11005, 9, 1006, 9000),
+    (11006, 8, 1007, 8000),
+    (11007, 6, 1008, 6000),
+    (11008, 9, 1009, 9000);
+
+
+-- Insertion DDL script for CanReport_1 table
+
+INSERT INTO CanReport_1 (PostID, UID)
+VALUES
+    (6001, 3001),
+    (6002, 3002),
+    (6003, 3003),
+    (6004, 3004),
+    (6005, 3005),
+    (6006, 3006),
+    (6007, 3007),
+    (6008, 3008);
+
+-- Insertion DDL script for CanReport_2 table
+
+INSERT INTO CanReport_2 (UID, PPostID)
+VALUES
+    (3001, 7001),
+    (3002, 7002),
+    (3003, 7031),
+    (3004, 7032),
+    (3005, 7033),
+    (3006, 7035),
+    (3007, 7036),
+    (3008, 7037);
+
+
+-- Insertion DDL script for Report_1 table
+
+INSERT INTO Report_1 (ReportID, RType, RTime, DID, PostID, UID)
+VALUES
+    (12001, 'Spam', CURRENT_TIMESTAMP, 1001, 6001, 3001),
+    (12002, 'Inappropriate Content', CURRENT_TIMESTAMP, 1002, 6002, 3002),
+    (12005, 'Spam', CURRENT_TIMESTAMP, 1004, 6003, 3003),
+    (12006, 'Inappropriate Content', CURRENT_TIMESTAMP, 1005, 6004, 3004),
+    (12007, 'Misinformation', CURRENT_TIMESTAMP, 1006, 6005, 3005),
+    (12011, 'Spam', CURRENT_TIMESTAMP, 1007, 6006, 3006),
+    (12012, 'Inappropriate Content', CURRENT_TIMESTAMP, 1008, 6007, 3007),
+    (12013, 'Misinformation', CURRENT_TIMESTAMP, 1009, 6008, 3008);
+
+
+-- Insertion DDL script for Report_2 table
+
+INSERT INTO Report_2 (ReportID, RType, RTime, DID, PPostID, UID)
+VALUES
+    (12003, 'Misinformation', CURRENT_TIMESTAMP, 1001, 7001, 3001),
+    (12004, 'Copyright Violation', CURRENT_TIMESTAMP, 1002, 7002, 3002),
+    (12008, 'Copyright Violation', CURRENT_TIMESTAMP, 1004, 7031, 3003),
+    (12009, 'Offensive Language', CURRENT_TIMESTAMP, 1005, 7032, 3004),
+    (12010, 'Hate Speech', CURRENT_TIMESTAMP, 1006, 7033, 3005),
+    (12014, 'Copyright Violation', CURRENT_TIMESTAMP, 1007, 7035, 3006),
+    (12015, 'Offensive Language', CURRENT_TIMESTAMP, 1008, 7036, 3007),
+    (12016, 'Hate Speech', CURRENT_TIMESTAMP, 1009, 7037, 3008);
+
+
+-- Insertion DDL script for View_Un_1 table
+
+INSERT INTO View_Un_1 (ViewTime, PostID, UnID)
+VALUES
+    (CURRENT_TIMESTAMP, 6001, 4001),
+    (CURRENT_TIMESTAMP, 6002, 4002),
+    (CURRENT_TIMESTAMP, 6003, 4003),
+    (CURRENT_TIMESTAMP, 6004, 4004),
+    (CURRENT_TIMESTAMP, 6005, 4005),
+    (CURRENT_TIMESTAMP, 6006, 4006),
+    (CURRENT_TIMESTAMP, 6007, 4007),
+    (CURRENT_TIMESTAMP, 6008, 4008);
+
+
+-- Insertion DDL script for View_Un_2 table
+
+INSERT INTO View_Un_2 (ViewTime, UnID, PPostID)
+VALUES
+    (CURRENT_TIMESTAMP, 4001, 7001),
+    (CURRENT_TIMESTAMP, 4002, 7002),
+    (CURRENT_TIMESTAMP, 4003, 7031),
+    (CURRENT_TIMESTAMP, 4004, 7032),
+    (CURRENT_TIMESTAMP, 4005, 7033),
+    (CURRENT_TIMESTAMP, 4006, 7035),
+    (CURRENT_TIMESTAMP, 4007, 7036),
+    (CURRENT_TIMESTAMP, 4008, 7037);
+
+
+-- Insertion DDL script for View_L_1 table
+
+INSERT INTO View_L_1 (ViewTime, PostID, UID)
+VALUES
+    (CURRENT_TIMESTAMP, 6001, 3001),
+    (CURRENT_TIMESTAMP, 6002, 3002),
+    (CURRENT_TIMESTAMP, 6003, 3003),
+    (CURRENT_TIMESTAMP, 6004, 3004),
+    (CURRENT_TIMESTAMP, 6005, 3005),
+    (CURRENT_TIMESTAMP, 6006, 3006),
+    (CURRENT_TIMESTAMP, 6007, 3007),
+    (CURRENT_TIMESTAMP, 6008, 3008);
+
+
+-- Insertion DDL script for View_L_2 table
+
+INSERT INTO View_L_2 (ViewTime, UID, PPostID)
+VALUES
+    (CURRENT_TIMESTAMP, 3001, 7001),
+    (CURRENT_TIMESTAMP, 3002, 7002),
+    (CURRENT_TIMESTAMP, 3003, 7031),
+    (CURRENT_TIMESTAMP, 3004, 7032),
+    (CURRENT_TIMESTAMP, 3005, 7033),
+    (CURRENT_TIMESTAMP, 3006, 7035),
+    (CURRENT_TIMESTAMP, 3007, 7036),
+    (CURRENT_TIMESTAMP, 3008, 7037);
+
+
+-- Insertion DDL script for Author table
+
+INSERT INTO Author (AuthorName, PPostID)
+VALUES
+    ('Rajat Mishra', 7001),
+    ('Amisha Gupta', 7002),
+    ('Rajesh Gupta', 7031),
+    ('Priya Patel', 7032),
+    ('Amit Singh', 7033),
+    ('Rahul Sharma', 7035),
+    ('Neha Verma', 7036),
+    ('Vivek Singh', 7037);
+
+-- Insertion DDL script for Contains table
+
+INSERT INTO Contains (PPostID, AdID)
+VALUES
+    (7001, 11001),
+    (7002, 11002),
+    (7031, 11003),
+    (7032, 11004),
+    (7033, 11005),
+    (7035, 11006),
+    (7036, 11007),
+    (7037, 11008);
+
+
+-- Insertion DDL script for Follow table
+
+INSERT INTO Follow (UID1, UID2)
+VALUES
+    (3001, 3002),
+    (3002, 3001),
+    (3003, 3004),
+    (3004, 3005),
+    (3005, 3003),
+    (3006, 3007),
+    (3007, 3008),
+    (3008, 3006);
+
+
+-- Insertion DDL script for DealWith table
+
+INSERT INTO DealWith (PublisherID, DID)
+VALUES
+    (5001, 1001),
+    (5002, 1002),
+    (5006, 1004),
+    (5007, 1005),
+    (5008, 1006),
+    (5009, 1007),
+    (5010, 1008),
+    (5011, 1009);
+
+
+-- Insertion DDL script for Follow2 table
+
+INSERT INTO Follow2 (UID, PublisherID)
+VALUES
+    (3001, 5001),
+    (3002, 5002),
+    (3003, 5006),
+    (3004, 5007),
+    (3005, 5008),
+    (3006, 5009),
+    (3007, 5010),
+    (3008, 5011);
